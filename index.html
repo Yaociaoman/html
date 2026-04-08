@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Code example:</title>
+    <meta charset="UTF-8">
+    <title>Table and Fixed Div</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        /* 不同背景色 */
+        .yellow {
+            background-color: yellow;
+        }
+
+        .gray {
+            background-color: lightgray;
+        }
+
+        /* 固定在右上角 */
+        .fixed-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border: 3px solid green;
+            padding: 15px;
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
 
-<P><b>Code example:</b></P>
+    <!-- 表格 -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr class="yellow">
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr class="gray">
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr class="yellow">
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
 
-<pre>
-<code>
-    var person = {
-    firstName:"your firstName",
-    lastName:"your lastName",
-    studentId:"your studentId"
-    }
-</code>
+    <!-- 固定的 div -->
+    <div class="fixed-box">
+        This div element has<br>
+        position: fixed;
+    </div>
 
 </body>
 </html>
-<!-- update -->
