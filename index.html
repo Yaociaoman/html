@@ -1,73 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Table and Fixed Div</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 200px;
-        }
+    <meta charset="utf-8">
+    <title>My First Bootstrap Page</title>
 
-        th, td {
-            border: 2px solid black;
-            text-align: center;
-            padding: 10px;
-        }
+    <!-- Bootstrap 3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-        th {
-            background-color: gray;
-            color: white;
-        }
-
-        /* 不同背景色 */
-        .yellow {
-            background-color: yellow;
-        }
-
-        .white {
-            background-color: white;
-        }
-
-        /* 固定在右上角 */
-        .fixed-box {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            border: 3px solid green;
-            padding: 15px;
-            background-color: white;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- 表格 -->
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-        </tr>
-        <tr class="yellow">
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr class="gray">
-            <td>2</td>
-            <td>2</td>
-        </tr>
-        <tr class="yellow">
-            <td>3</td>
-            <td>3</td>
-        </tr>
-    </table>
+<div class="container">
 
-    <!-- 固定的 div -->
-    <div class="fixed-box">
-        This div element has<br>
-        position: fixed;
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>My First Bootstrap Page</h1>
     </div>
+
+    <!-- Input -->
+    <div class="form-group">
+        <label>Input:</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <!-- Alert -->
+    <div class="alert alert-success">
+        Successful alert
+    </div>
+
+    <!-- Button + Badge -->
+    <button class="btn btn-default">
+        Button <span class="badge">badge</span>
+    </button>
+
+</div>
 
 </body>
 </html>
